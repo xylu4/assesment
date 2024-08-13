@@ -1,3 +1,5 @@
 <template>
-	<Form />
+	<div>
+		<router-view />
+	</div>
 </template>

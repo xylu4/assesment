@@ -8,11 +8,13 @@ import Dropdown from "./components/Dropdown.vue";
 import Form from './components/Form.vue'
 import TextField from "./components/TextField.vue";
 import CheckboxGroup from "./components/CheckboxGroup.vue";
+import router from "./router";
 
 const app = createApp(App)
 const pinia = createPinia()
 
 app.use(pinia)
+app.use(router)
 //components registered globally, as per requirements
 //no need for direct import
 app.component('Form', Form)
